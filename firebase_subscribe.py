@@ -5,7 +5,7 @@ import firebase_admin
 from firebase_admin import db
 
 my_key = os.path.expanduser(
-    "~/Firebase_Keys/abstract-web-302801-firebase-adminsdk-dpn42-63843286c0.json")
+    "~/Firebase_Keys/abstract-web-302801-firebase-adminsdk-dpn42-baca394af5.json")
 
 cred_obj = firebase_admin.credentials.Certificate(my_key)
 default_app = firebase_admin.initialize_app(cred_obj, {
