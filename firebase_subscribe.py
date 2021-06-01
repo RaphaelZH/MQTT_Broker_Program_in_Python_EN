@@ -5,11 +5,11 @@ import firebase_admin
 from firebase_admin import db
 
 my_key = os.path.expanduser(
-    "~/Firebase_Keys/abstract-web-302801-firebase-adminsdk-dpn42-baca394af5.json")
+    "~/Firebase_Keys/mqtt-broker-8bbf7-firebase-adminsdk-n0kkg-7887dba88f.json")
 
 cred_obj = firebase_admin.credentials.Certificate(my_key)
 default_app = firebase_admin.initialize_app(cred_obj, {
-    'databaseURL': 'https://abstract-web-302801-default-rtdb.europe-west1.firebasedatabase.app/'
+    'databaseURL': 'https://mqtt-broker-8bbf7-default-rtdb.europe-west1.firebasedatabase.app/'
 })
 
 # The callback for when the client receives a CONNACK response from the server.
